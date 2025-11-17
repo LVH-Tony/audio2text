@@ -24,6 +24,7 @@ A simple Python application that converts .m4a audio files to text using OpenAI'
 ## Installation
 
 1. Install Python dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -35,6 +36,7 @@ Note: The first time you run the app, Whisper will download the model (this is a
 ### Basic Usage
 
 Convert an audio file to text:
+
 ```bash
 python app.py input.m4a
 ```
@@ -64,6 +66,7 @@ python app.py input.m4a -m small
 ### Specify Language
 
 For better accuracy, you can specify the language:
+
 ```bash
 python app.py input.m4a -l en
 ```
@@ -73,6 +76,7 @@ Common language codes: `en` (English), `vi` (Vietnamese), `es` (Spanish), `fr` (
 ### Keep Intermediate WAV File
 
 By default, the temporary WAV file is deleted after processing. To keep it:
+
 ```bash
 python app.py input.m4a --keep-wav
 ```
@@ -112,16 +116,18 @@ The first time you use a model size, Whisper will automatically download it. Mod
 ## Troubleshooting
 
 ### "ffmpeg not found"
+
 Make sure FFmpeg is installed and available in your PATH. Test with: `ffmpeg -version`
 
 ### "No module named 'whisper'"
+
 Run: `pip install openai-whisper`
 
 ### Slow processing
+
 - Use a smaller model (`tiny` or `base`)
 - Consider using GPU acceleration if available (requires PyTorch with CUDA)
 
 ## License
 
 This project uses OpenAI's Whisper model, which is licensed under the MIT License.
-
