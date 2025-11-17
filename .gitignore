@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Audio files
+*.m4a
+*.wav
+*.mp3
+*.flac
+
+# Output files
+*.txt
+
+# Model cache (optional - you may want to keep this)
+# .cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+files/
