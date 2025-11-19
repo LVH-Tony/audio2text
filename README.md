@@ -1,10 +1,10 @@
 # Audio to Text Converter
 
-A simple Python application that converts .m4a audio files to text using OpenAI's Whisper model running locally on your CPU.
+A simple Python application that converts audio files (M4A, MP3, WAV, etc.) to text using OpenAI's Whisper model running locally on your CPU.
 
 ## Features
 
-- 🎤 Converts .m4a audio files to text
+- 🎤 Converts audio files to text (M4A, MP3, WAV, MP4, WebM, OGG, FLAC, AAC)
 - 🖥️ Runs entirely on local CPU (no cloud services required)
 - 🌍 Supports multiple languages (auto-detection available)
 - 📝 Multiple model sizes for accuracy vs speed tradeoff
@@ -39,6 +39,9 @@ Convert an audio file to text:
 
 ```bash
 python app.py input.m4a
+# or
+python app.py input.mp3
+# or any supported format (WAV, MP4, WebM, OGG, FLAC, AAC)
 ```
 
 The transcription will be printed to the console and saved to `input.txt` by default.
@@ -93,8 +96,11 @@ python app.py recording.m4a -m large -o transcript.txt
 # Spanish audio
 python app.py audio.m4a -l es -m small
 
-# Vietnamese audio
-python app.py audio.m4a -l vi -m base
+# Vietnamese audio (MP3)
+python app.py audio.mp3 -l vi -m base
+
+# Any supported format
+python app.py recording.wav -l en -m small
 ```
 
 ## Model Download
